@@ -6,5 +6,5 @@ Multistep Component —
 <router-outlet></router-outlet>
 <hr>
 
-<button [disabled]="stepIsFirstOrLast('backward')" (click)="goToNextStep('backward')">Back</button>
-<button [disabled]="!state.isValid || stepIsFirstOrLast('forward')" (click)="goToNextStep('forward')">Forward</button> 
+<button (click)="goToNextStep('backward')" [disabled]="stepIsFirstOrLast('backward')">Back</button>
+<button (click)="goToNextStep('forward')" [disabled]="!state.isValid || stepIsFirstOrLast('forward')">Forward</button> 
