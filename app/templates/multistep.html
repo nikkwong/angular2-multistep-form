@@ -1,0 +1,10 @@
+Multistep Component — 
+<a routerLink="/multistep/step1" routerLinkActive="active">Go to Step 1</a>
+<a routerLink="/multistep/step2" routerLinkActive="active">Go to step 2</a>
+
+<hr>
+<router-outlet></router-outlet>
+<hr>
+
+<button [disabled]="stepIsFirstOrLast('backward')" (click)="goToNextStep('backward')">Back</button>
+<button [disabled]="!state.isValid || stepIsFirstOrLast('forward')" (click)="goToNextStep('forward')">Forward</button> 
