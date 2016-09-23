@@ -1,6 +1,6 @@
 # angular2-multistep-form
 
-## This app aims to demonstrate the creation multistep forms in Angular 2.
+This app aims to demonstrate the creation multistep forms in Angular 2.
 
 ### Features
 
